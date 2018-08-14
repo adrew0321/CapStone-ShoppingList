@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Capstone: Shopping List</title>
+	<script src="Scripts/mycode.js" async></script>
+</head>
+<body>
+	<h1 >***Shopping List***</h1>
+
+	<table border="1" id="shoppingList">
+		<tr>
+			<th>Items</th>
+			<th>Price</th>
+			<th>Quantity</th>
+			<th>To Cart</th>
+		</tr>
+
+		<!--16 oz. Pepsi-->
+		<tr>
+			<td>16oz. Pepsi</td>
+			<td>$1.29</td>
+			<td><input type="number" id="pepSmallQuantity" min="1" max="5" /></td>
+			<td><button onclick="addToList('16oz. Pepsi', 1.29, pepSmallQuantity.value)">Add to Cart</button></td>
+		</tr>
+
+		<!--2 Liter Pepsi-->
+		<tr>
+			<td>2 Liter Pepsi</td>
+			<td>$1.59</td>
+			<td><input type="number" id="pepLrgQuantity" min="1" max="5" /></td>
+			<td><button onclick="addToList('2 Liter Pepsi', 1.59, pepLrgQuantity.value)">Add to Cart</button></td>
+		</tr>
+
+		<!--16 oz. Dr.Pepper-->
+		<tr>
+			<td>16oz. Dr. Pepper</td>
+			<td>$1.29</td>
+			<td><input type="number" id="drPSmallQuantity" min="1" max="5" /></td>
+			<td><button onclick="addToList('16oz. Dr.Pepper', 1.59, drPSmallQuantity.value)">Add to Cart</button></td>
+		</tr>
+
+		<!--2Liter Dr. Pepper-->
+		<tr>
+			<td>2 Liter Dr. Pepper</td>
+			<td>$1.59</td>
+			<td><input type="number" id="drPLrgQuantity" min="1" max="5" /></td>
+			<td><button onclick="addToList('2 Liter Dr.Pepper', 1.59, drPLrgQuantity.value)">Add to Cart</button></td>
+		</tr>
+
+		<!--16oz. Water-->
+		<tr>
+			<td>16oz. Water</td>
+			<td>$1.00</td>
+			<td><input type="number" id="waterSmallQuantity" min="1" max="5" /></td>
+			<td><button onclick="addToList('16oz. Water', 1.59, waterSmallQuantity.value)">Add to Cart</button></td>
+		</tr>
+
+		<!--2 Liter Water-->
+		<tr>
+			<td>2 Liter Water</td>
+			<td>$1.29</td>
+			<td><input type="number" id="waterLrgQuantity" min="1" max="5" /></td>
+			<td><button onclick="addToList('2 Liter Water', 1.59, waterLrgQuantity.value)">Add to Cart</button></td>
+		</tr>
+
+
+	</table>
+	
+
+</body>
+</html>
